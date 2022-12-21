@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('pos-receipt-contact')]" position="after">
+            <!-- we have the customer name here  -->
+            <br/><br/>
+            <t t-if="receipt.client">
+                <div class="cashier" style="font-size: 0.8em !important; width: 50%; margin: auto; text-align: center;">
+                    <div>--------------------------------</div>
+                    <div>Customer: <b><t t-esc="receipt.client.name" /></b></div>
+                </div>
+            </t>
+<!--            <div class="cashier" style="font-size: 0.8em !important; width: 65%; margin: auto;">-->
+<!--                <span>Vehicle Reg#: <div style="display: inline-block;"><hr/></div></span>-->
+<!--            </div>-->
+            <br/>
+        </xpath>
+
+        <xpath expr="//div[hasclass('pos-receipt')]" position="inside">
+            <div style="font-size: 0.5em !important; margin-top: 10px;">
+                <hr class="margin-bottom: 4px;" />
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+                    <div style="display: inline-block; width: 50%; text-overflow: hidden;">
+                        <h3><b>HARARE BRANCH</b></h3>
+                        <div>9 Parklane Cnr J. Nyerere</div>
+                        <div>Tel: 0242 253818</div>
+                        <div>Cell: 0778 029 823</div>
+                    </div>
+                    <div style="display: inline-block; width: 50%; text-overflow: hidden;">
+                        <h3><b>BULAWAYO BRANCH</b></h3>
+                        <div>100 Century House</div>
+                        <div>Room 1 Ground Floor</div>
+                        <div>Cnr Jason Moyo 10th Avenue</div>
+                        <div>Tel: 029 271118</div>
+                        <div>Cell: 0731 141 948</div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+                    <div style="display: inline-block; width: 50%; text-overflow: hidden;">
+                        <h3><b>MUTARE BRANCH</b></h3>
+                        <div>Room 106 First Floor</div>
+                        <div>First Mutual Centre</div>
+                        <div>82/86 Herbert Chitepo Street</div>
+                        <div>Tel: 020 2020715</div>
+                        <div>Cell: 0713 471 421</div>
+                    </div>
+                     <div style="display: inline-block; width: 50%; text-overflow: hidden;">
+                        <h3><b>HARARE BRANCH</b></h3>
+                        <div>144 Chinhoyi Street/ Jason Moyo Ave</div>
+                        <div>Tel: 0242 756869</div>
+                        <div>Cell: 0784 954 984/0719 222 580</div>
+                    </div>
+                </div>
+                <br class="margin-top: 10px; margin-bottom: 4px;" />
+                <div class="row" style="font-size: 0.65em !important; border-left: 2px solid gray; padding-left: 10px;">
+                    <ol style="font-style: italic;">
+                        <li><b>1.</b> No Refunds.</li>
+                        <li><b>2.</b> All lessons must be paid through office.</li>
+                        <li><b>3.</b> Cancellation of lessons should be done 2 hours before the lesson.</li>
+                        <li><b>4.</b> Check your receipt and student card before you leave the office.</li>
+                        <li><b>5.</b> All postponed/ cancelled lessons will be forfeited if not done within 1 month from date of cancellation.</li>
+                    </ol>
+                </div>
+            </div>
+        </xpath>
+
+    </t>
+</templates>
+
+
+
