@@ -35,7 +35,7 @@
     'assets': {
         'web.assets_qweb': [
             "booking-ref-receipt/static/src/xml/pos.xml",
-            "booking-ref-receipt/static/src/xml/point.xml",
+            # "booking-ref-receipt/static/src/xml/point.xml",
         ],
     },
 }
