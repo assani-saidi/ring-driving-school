@@ -1,0 +1,6 @@
+The POS intergration relies heavily on another app the bypassprintpreview package
+This app is intended to work for online POS systems and calls a locally hosted api
+At port == 5000 to communicate with the terminal.
+
+All control is surrendered to the API and it will determine what is to be displayed
+: in cases of errors. And continues the payment

@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class fiscal(models.Model):
-#     _name = 'fiscal.fiscal'
-#     _description = 'fiscal.fiscal'
+# class bypassprintview(models.Model):
+#     _name = 'bypassprintview.bypassprintview'
+#     _description = 'bypassprintview.bypassprintview'
 
 #     name = fields.Char()
 #     value = fields.Integer()

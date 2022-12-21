@@ -2,20 +2,20 @@
 # from odoo import http
 
 
-# class Fiscal(http.Controller):
-#     @http.route('/fiscal/fiscal', auth='public')
+# class Bypassprintview(http.Controller):
+#     @http.route('/bypassprintview/bypassprintview', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/fiscal/fiscal/objects', auth='public')
+#     @http.route('/bypassprintview/bypassprintview/objects', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('fiscal.listing', {
-#             'root': '/fiscal/fiscal',
-#             'objects': http.request.env['fiscal.fiscal'].search([]),
+#         return http.request.render('bypassprintview.listing', {
+#             'root': '/bypassprintview/bypassprintview',
+#             'objects': http.request.env['bypassprintview.bypassprintview'].search([]),
 #         })
 
-#     @http.route('/fiscal/fiscal/objects/<model("fiscal.fiscal"):obj>', auth='public')
+#     @http.route('/bypassprintview/bypassprintview/objects/<model("bypassprintview.bypassprintview"):obj>', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('fiscal.object', {
+#         return http.request.render('bypassprintview.object', {
 #             'object': obj
 #         })

@@ -1,7 +1,0 @@
-<odoo>
-    <template id="pos_common_assets_extension">
-       <xpath expr="." position="inside">
-
-       </xpath>
-    </template>
-</odoo>

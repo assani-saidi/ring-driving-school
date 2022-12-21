@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_fiscal_fiscal,fiscal.fiscal,model_fiscal_fiscal,base.group_user,1,1,1,1
+access_bypassprintview_bypassprintview,bypassprintview.bypassprintview,model_bypassprintview_bypassprintview,base.group_user,1,1,1,1
